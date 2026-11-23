@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlowNote hesap silme</title>
+  <style>
+    body { font-family: sans-serif; max-width: 720px; margin: 32px auto; padding: 0 16px; line-height: 1.5; color: #222; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.6rem; }
+    button, input { font: inherit; }
+    button { cursor: pointer; padding: 10px 14px; margin: 4px 4px 4px 0; border: 0; border-radius: 8px; background: #1a73e8; color: #fff; }
+    button.tehlike { background: #c62828; }
+    button.ikincil { background: #5f6368; }
+    input { width: 100%; max-width: 360px; padding: 8px; margin: 4px 0; box-sizing: border-box; }
+    .kutu { background: #f4f4f4; padding: 12px 16px; border-radius: 8px; margin: 12px 0; }
+    .gizli { display: none; }
+    #durum { white-space: pre-wrap; font-size: 0.95rem; }
+    a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+  <h1>FlowNote hesabını sil</h1>
+  <p>Son güncelleme: 6 Ekim 2026</p>
+  <p>Giriş yaptıktan sonra hesabını burada kalıcı olarak silebilirsin. Bu işlem geri alınamaz.</p>
+
+  <div id="girisKutu" class="kutu">
+    <p><strong>1. FlowNote hesabınla giriş yap</strong></p>
+    <button type="button" id="btnGoogle">Google ile giriş</button>
+    <p>veya e-posta ve şifre:</p>
+    <input id="email" type="email" autocomplete="username" placeholder="E-posta">
+    <input id="sifre" type="password" autocomplete="current-password" placeholder="Şifre">
+    <div><button type="button" id="btnEposta">E-posta ile giriş</button></div>
+    <p id="girisHata"></p>
+  </div>
+
+  <div id="silKutu" class="kutu gizli">
+    <p id="oturumBilgi"></p>
+    <p>Onay için aşağıya <strong>SIL</strong> yaz.</p>
+    <input id="onay" type="text" autocomplete="off" placeholder="SIL">
+    <div>
+      <button type="button" class="tehlike" id="btnSil">Hesabımı kalıcı sil</button>
+      <button type="button" class="ikincil" id="btnCikis">Çıkış</button>
+    </div>
+  </div>
+
+  <p id="durum"></p>
+
+  <h2>Ne silinir</h2>
+  <ul>
+    <li>Giriş hesabı (e-posta veya Google)</li>
+    <li>Profil, fotoğraf, gönderi, yorum, beğeni, takip, engel</li>
+    <li>Sohbet kayıtların</li>
+  </ul>
+  <p>Telefondaki görev ve odak verileri uygulamayı silince veya uygulamadaki Hesabımı sil ile temizlenir.</p>
+  <p>Sorun olursa: <a href="mailto:mehmetokyay5406@gmail.com">mehmetokyay5406@gmail.com</a></p>
+  <p><a href="gizlilik.html">Gizlilik politikası</a></p>
+
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-storage-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "YOUR_FIREBASE_WEB_API_KEY",
+      authDomain: "gunluknottutucu-2fbc1.firebaseapp.com",
+      projectId: "gunluknottutucu-2fbc1",
+      storageBucket: "gunluknottutucu-2fbc1.firebasestorage.app",
+      appId: "1:194860940469:android:edb634c4d7ded517b312fc"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const storage = firebase.storage();
+
+    const girisKutu = document.getElementById("girisKutu");
+    const silKutu = document.getElementById("silKutu");
+    const girisHata = document.getElementById("girisHata");
+    const durum = document.getElementById("durum");
+    const oturumBilgi = document.getElementById("oturumBilgi");
+
+    function yaz(metin) { durum.textContent = metin; }
+    function hataYaz(e) {
+      const kod = e && e.code ? e.code : "";
+      const msg = e && e.message ? e.message : String(e);
+      if (kod === "auth/wrong-password" || kod === "auth/invalid-credential" || kod === "auth/user-not-found") {
+        return "E-posta veya şifre hatalı.";
+      }
+      if (kod === "auth/popup-closed-by-user") return "Google penceresi kapatıldı.";
+      if (kod === "auth/requires-recent-login") return "Oturum eski. Çıkış yapıp tekrar giriş yap, sonra sil.";
+      return msg;
+    }
+
+    function oturumGoster(user) {
+      girisHata.textContent = "";
+      if (user) {
+        girisKutu.classList.add("gizli");
+        silKutu.classList.remove("gizli");
+        oturumBilgi.textContent = "Giriş: " + (user.email || user.uid);
+      } else {
+        girisKutu.classList.remove("gizli");
+        silKutu.classList.add("gizli");
+      }
+    }
+
+    auth.onAuthStateChanged(oturumGoster);
+    auth.getRedirectResult().catch(e => { girisHata.textContent = hataYaz(e); });
+
+    document.getElementById("btnGoogle").onclick = () => {
+      girisHata.textContent = "";
+      const saglayici = new firebase.auth.GoogleAuthProvider();
+      saglayici.setCustomParameters({ prompt: "select_account" });
+      auth.signInWithPopup(saglayici).catch(() => auth.signInWithRedirect(saglayici));
+    };
+    document.getElementById("btnEposta").onclick = () => {
+      girisHata.textContent = "";
+      const email = document.getElementById("email").value.trim();
+      const sifre = document.getElementById("sifre").value;
+      if (!email || !sifre) {
+        girisHata.textContent = "E-posta ve şifre gir.";
+        return;
+      }
+      auth.signInWithEmailAndPassword(email, sifre).catch(e => {
+        girisHata.textContent = hataYaz(e);
+      });
+    };
+    document.getElementById("btnCikis").onclick = () => auth.signOut();
+
+    async function sorguSil(sorgu) {
+      while (true) {
+        const snap = await sorgu.limit(400).get();
+        if (snap.empty) return;
+        const batch = db.batch();
+        snap.docs.forEach(d => batch.delete(d.ref));
+        await batch.commit();
+        if (snap.size < 400) return;
+      }
+    }
+
+    async function altKoleksiyonSil(ref, ad) {
+      await sorguSil(ref.collection(ad));
+    }
+
+    async function depolamaSil(yol) {
+      try {
+        const liste = await storage.ref(yol).listAll();
+        await Promise.all(liste.items.map(item => item.delete().catch(() => null)));
+      } catch (e) {  }
+    }
+
+    async function hesabiSil(user) {
+      const uid = user.uid;
+      const profil = db.collection("kullanicilar").doc(uid);
+
+      yaz("Gönderiler siliniyor…");
+      const gonderiler = await db.collection("gonderiler").where("uid", "==", uid).get();
+      for (const d of gonderiler.docs) {
+        await altKoleksiyonSil(d.ref, "yorumlar");
+        await altKoleksiyonSil(d.ref, "begeniler");
+        await d.ref.delete();
+      }
+
+      yaz("Yorumlar ve beğeniler siliniyor…");
+      try { await sorguSil(db.collectionGroup("yorumlar").where("uid", "==", uid)); } catch (e) {}
+      try { await sorguSil(db.collectionGroup("begeniler").where("uid", "==", uid)); } catch (e) {}
+
+      yaz("Takip, engel ve sohbetler siliniyor…");
+      try { await sorguSil(db.collection("takipler").where("takipEden", "==", uid)); } catch (e) {}
+      try { await sorguSil(db.collection("takipler").where("hedef", "==", uid)); } catch (e) {}
+      try { await sorguSil(db.collection("engeller").where("eden", "==", uid)); } catch (e) {}
+
+      const sohbetler = await db.collection("sohbetler").where("uyeler", "array-contains", uid).get();
+      for (const d of sohbetler.docs) {
+        await altKoleksiyonSil(d.ref, "mesajlar");
+        await d.ref.delete();
+      }
+
+      yaz("Profil siliniyor…");
+      await altKoleksiyonSil(profil, "begenilenGonderiler");
+      await altKoleksiyonSil(profil, "bildirimler");
+      await altKoleksiyonSil(profil, "cihaz");
+      await profil.delete().catch(() => null);
+
+      yaz("Fotoğraflar siliniyor…");
+      try { await sorguSil(db.collection("medya").where("uid", "==", uid)); } catch (e) {}
+
+      yaz("Giriş hesabı siliniyor…");
+      await user.delete();
+      yaz("Hesabın silindi. FlowNote’a bu hesapla giriş yapılamaz.");
+    }
+
+    document.getElementById("btnSil").onclick = async () => {
+      const user = auth.currentUser;
+      if (!user) return;
+      if (document.getElementById("onay").value.trim() !== "SIL") {
+        yaz("Onay için SIL yaz.");
+        return;
+      }
+      document.getElementById("btnSil").disabled = true;
+      yaz("Siliniyor, bekleyin…");
+      try {
+        await hesabiSil(user);
+      } catch (e) {
+        yaz("Silinemedi: " + hataYaz(e));
+        document.getElementById("btnSil").disabled = false;
+      }
+    };
+  </script>
+</body>
+</html>

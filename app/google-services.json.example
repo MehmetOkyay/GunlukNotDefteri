@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "194860940469",
+    "project_id": "gunluknottutucu-2fbc1",
+    "storage_bucket": "gunluknottutucu-2fbc1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194860940469:android:edb634c4d7ded517b312fc",
+        "android_client_info": {
+          "package_name": "com.mehmetokyay.flownote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194860940469-8od4l9v1pvucbhkrm4lhn7g676druoai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mehmetokyay.flownote",
+            "certificate_hash": "996b48a92aae5f09791c7319504a19fda8b90b7e"
+          }
+        },
+        {
+          "client_id": "194860940469-stlj2e68p7bjpf87a83r518fjmfaab9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mehmetokyay.flownote",
+            "certificate_hash": "ccc8332eccfcdc2ebe0cf2001a2772b2dd2d9dcb"
+          }
+        },
+        {
+          "client_id": "194860940469-ififa399143udud3v29eoahc0jga8bpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR_FIREBASE_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194860940469-ififa399143udud3v29eoahc0jga8bpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

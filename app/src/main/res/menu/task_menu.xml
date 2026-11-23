@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_tamamla"
+        android:title="@string/task_mark_done" />
+    <item
+        android:id="@+id/action_duzenle"
+        android:title="@string/task_edit" />
+    <item
+        android:id="@+id/action_sil"
+        android:title="@string/task_delete" />
+</menu>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/renk_arkaplan"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textProfilIptal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/iptal"
+            android:textColor="@color/renk_metin_ikincil"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/profili_duzenle_baslik"
+            android:textColor="@color/renk_metin_baslik"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textProfilKaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/kaydet"
+            android:textColor="#1756D3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#1756D3"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageProfilFoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E2E8F0"
+                        android:scaleType="centerCrop"
+                        android:src="@android:drawable/ic_menu_camera"
+                        app:tint="#888888" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    app:cardBackgroundColor="#1756D3"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="2dp"
+                    app:strokeColor="#FFFFFF"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_edit"
+                        app:tint="#FFFFFF" />
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editDuzenleIsim"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_ad"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/renk_metin_baslik" />
+
+            <EditText
+                android:id="@+id/editDuzenleSoyisim"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_soyad"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/renk_metin_baslik" />
+
+            <EditText
+                android:id="@+id/editDuzenleKullaniciAdi"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_kullanici_adi"
+                android:inputType="textNoSuggestions"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/renk_metin_baslik" />
+
+            <EditText
+                android:id="@+id/editDuzenleMeslek"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_meslek"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/renk_metin_baslik" />
+
+            <EditText
+                android:id="@+id/editDuzenleKonum"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_konum"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/renk_metin_baslik" />
+
+            <EditText
+                android:id="@+id/editDuzenleWeb"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_web"
+                android:inputType="textUri"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/renk_metin_baslik" />
+
+            <EditText
+                android:id="@+id/editDuzenleBiyografi"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top|start"
+                android:hint="@string/hint_biyografi"
+                android:inputType="textMultiLine"
+                android:padding="16dp"
+                android:textColor="@color/renk_metin_baslik" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

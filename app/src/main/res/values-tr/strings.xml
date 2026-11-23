@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Günlük Not Defteri</string>
+    <string name="hello_blank_fragment">Akış</string>
+    <string name="nav_akis">Akış</string>
+    <string name="nav_gorevler">Görevler</string>
+    <string name="nav_odak">Odak</string>
+    <string name="nav_profil">Profil</string>
+
+    <string name="calendar_notifications">Bildirimler</string>
+    <string name="calendar_search">Ara</string>
+    <string name="calendar_previous_month">Önceki ay</string>
+    <string name="calendar_next_month">Sonraki ay</string>
+    <string name="today">Bugün</string>
+    <string name="see_all">Tümünü gör ›</string>
+    <string name="activity_count">%1$d Aktivite</string>
+
+    <string name="settings_title">Ayarlar</string>
+    <string name="daily_reminders">Günlük Hatırlatıcılar</string>
+    <string name="dark_mode">Karanlık Tema</string>
+    <string name="language">Dil</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_german">Deutsch</string>
+    <string name="rate_app">Uygulamayı Değerlendir</string>
+    <string name="version">Versiyon 1.0.0</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="settings">Ayarlar</string>
+
+    <string name="focus_title">Odak</string>
+    <string name="focus_mode">Odaklanma Modu</string>
+    <string name="break_mode">Mola Modu</string>
+    <string name="focus_25">Odaklanma (25 dk)</string>
+    <string name="break_5">Mola (5 dk)</string>
+    <string name="start">Başlat</string>
+    <string name="pause">Duraklat</string>
+    <string name="reset">Sıfırla</string>
+
+    <string name="task_title_hint">Görev Başlığı</string>
+    <string name="task_details_hint">Detaylar...</string>
+    <string name="repeat_status">Tekrar Durumu:</string>
+    <string name="repeat_none">Yok</string>
+    <string name="repeat_daily">Günlük</string>
+    <string name="repeat_weekly">Haftalık</string>
+    <string name="repeat_monthly">Aylık</string>
+    <string name="repeat_yearly">Yıllık</string>
+    <string name="select_date">Tarih Seç</string>
+    <string name="select_time">Saat Seç</string>
+    <string name="save_task">Görevi Kaydet</string>
+    <string name="task_title_required">Görev başlığı boş bırakılamaz</string>
+    <string name="task_title_too_long">Görev başlığı en fazla 80 karakter olabilir</string>
+    <string name="task_saved">Görev kaydedildi</string>
+    <string name="task_save_failed">Görev kaydedilemedi, tekrar deneyin</string>
+
+    <string name="material_calendar_monday">P</string>
+    <string name="material_calendar_tuesday">S</string>
+    <string name="material_calendar_wednesday">Ç</string>
+    <string name="material_calendar_thursday">P</string>
+    <string name="material_calendar_friday">C</string>
+    <string name="material_calendar_saturday">C</string>
+    <string name="material_calendar_sunday">P</string>
+    <array name="material_calendar_months_array">
+        <item>OCAK</item><item>ŞUBAT</item><item>MART</item><item>NİSAN</item>
+        <item>MAYIS</item><item>HAZİRAN</item><item>TEMMUZ</item><item>AĞUSTOS</item>
+        <item>EYLÜL</item><item>EKİM</item><item>KASIM</item><item>ARALIK</item>
+    </array>
+    <string name="material_calendar_today_button">Bugün</string>
+    <string name="material_calendar_positive_button">Tamam</string>
+    <string name="material_calendar_negative_button">İptal</string>
+</resources>

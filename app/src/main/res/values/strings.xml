@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlowNote</string>
+    <string name="hello_blank_fragment">Akış</string>
+    <string name="nav_akis">Akış</string>
+    <string name="nav_gorevler">Görevler</string>
+    <string name="nav_odak">Odak</string>
+    <string name="nav_profil">Profil</string>
+
+    <string name="calendar_notifications">Bildirimler</string>
+    <string name="calendar_search">Ara</string>
+    <string name="calendar_previous_month">Önceki ay</string>
+    <string name="calendar_next_month">Sonraki ay</string>
+    <string name="today">Bugün</string>
+    <string name="see_all">Tümünü gör ›</string>
+    <string name="activity_count">%1$d Aktivite</string>
+
+    <string name="settings_title">Ayarlar</string>
+    <string name="daily_reminders">Günlük Hatırlatıcılar</string>
+    <string name="dark_mode">Karanlık Tema</string>
+    <string name="language">Dil</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_german">Deutsch</string>
+    <string name="rate_app">Uygulamayı Değerlendir</string>
+    <string name="version">Versiyon 1.0.0</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="settings">Ayarlar</string>
+
+    <string name="focus_title">Odak</string>
+    <string name="focus_mode">Odaklanma Modu</string>
+    <string name="break_mode">Mola Modu</string>
+    <string name="focus_25">Odaklanma (25 dk)</string>
+    <string name="break_5">Mola (5 dk)</string>
+    <string name="start">Başlat</string>
+    <string name="pause">Duraklat</string>
+    <string name="reset">Sıfırla</string>
+
+    <string name="task_title_hint">Görev Başlığı</string>
+    <string name="task_details_hint">Detaylar...</string>
+    <string name="repeat_status">Tekrar Durumu:</string>
+    <string name="repeat_none">Yok</string>
+    <string name="repeat_daily">Günlük</string>
+    <string name="repeat_weekly">Haftalık</string>
+    <string name="repeat_monthly">Aylık</string>
+    <string name="repeat_yearly">Yıllık</string>
+    <string name="select_date">Tarih Seç</string>
+    <string name="select_time">Saat Seç</string>
+    <string name="save_task">Görevi Kaydet</string>
+    <string name="task_title_required">Görev başlığı boş bırakılamaz</string>
+    <string name="task_title_too_long">Görev başlığı en fazla 80 karakter olabilir</string>
+    <string name="task_saved">Görev kaydedildi</string>
+    <string name="task_save_failed">Görev kaydedilemedi, tekrar deneyin</string>
+
+    <string name="material_calendar_monday">P</string>
+    <string name="material_calendar_tuesday">S</string>
+    <string name="material_calendar_wednesday">Ç</string>
+    <string name="material_calendar_thursday">P</string>
+    <string name="material_calendar_friday">C</string>
+    <string name="material_calendar_saturday">C</string>
+    <string name="material_calendar_sunday">P</string>
+    <array name="material_calendar_months_array">
+        <item>OCAK</item><item>ŞUBAT</item><item>MART</item><item>NİSAN</item>
+        <item>MAYIS</item><item>HAZİRAN</item><item>TEMMUZ</item><item>AĞUSTOS</item>
+        <item>EYLÜL</item><item>EKİM</item><item>KASIM</item><item>ARALIK</item>
+    </array>
+    <string name="material_calendar_today_button">Bugün</string>
+    <string name="material_calendar_positive_button">Tamam</string>
+    <string name="material_calendar_negative_button">İptal</string>
+
+    <string name="ayarlar_baslik">Ayarlar ve Tercihler</string>
+    <string name="yonet">Yönet</string>
+    <string name="gorunum_ve_tema">GÖRÜNÜM &amp; TEMA</string>
+    <string name="aydinlik">Aydınlık</string>
+    <string name="karanlik">Karanlık</string>
+    <string name="sistem">Sistem</string>
+    <string name="dil_ve_bolge">DİL &amp; BÖLGE</string>
+    <string name="uygulama_dili">Uygulama Dili</string>
+    <string name="hesap_ve_guvenlik">HESAP &amp; GÜVENLİK</string>
+    <string name="hesap_bilgileri">Hesap Bilgileri</string>
+    <string name="hesap_bilgileri_alt">Profil adı, bio ve e-posta</string>
+    <string name="sifre_2fa">Şifre Ayarları</string>
+    <string name="sifre_2fa_alt">Şifrenizi güvenli bir şekilde sıfırlayın</string>
+    <string name="gizlilik">Gizlilik &amp; Engellenenler</string>
+
+    <string name="gonderiler">Gönderiler</string>
+    <string name="aktiviteler">Aktiviteler</string>
+    <string name="paylasim">Paylaşım</string>
+    <string name="takipci">Takipçi</string>
+    <string name="profili_duzenle">Profili Düzenle</string>
+    <string name="paylas">Paylaş</string>
+    <string name="pomodoro_odak_baslik">POMODORO ODAK</string>
+    <string name="odak_btn">Odak (25)</string>
+    <string name="kisa_btn">Kısa (5)</string>
+    <string name="uzun_btn">Uzun (15)</string>
+    <string name="btn_sifirla">🔄 Sıfırla</string>
+    <string name="btn_baslat">▶ Başlat</string>
+    <string name="btn_duraklat">⏸ Duraklat</string>
+    <string name="btn_atla">⏩ Atla</string>
+    <string name="btn_ozel_sure">Özel Süre</string>
+    <string name="btn_kronometre">Kronometre</string>
+    <string name="odaklanma_seansi">ODAKLANMA SEANSI</string>
+    <string name="kisa_mola">KISA MOLA</string>
+    <string name="uzun_mola">UZUN MOLA</string>
+    <string name="ozel_seans">ÖZEL SEANS</string>
+    <string name="kronometre_suresiz">KRONOMETRE (SÜRESİZ)</string>
+    <string name="odak_bitti">Odak seansı bitti</string>
+    <string name="odak_bitti_metin">Süre doldu. Odak sekmesinden devam edebilirsin.</string>
+    <string name="begenilenler">Beğenilenler</string>
+
+    <string name="default_web_client_id">194860940469-ififa399143udud3v29eoahc0jga8bpt.apps.googleusercontent.com</string>
+
+    <string name="login_hosgeldin">Tekrar Hoş Geldin</string>
+    <string name="login_alt_baslik">Notlarına ulaşmak için giriş yap</string>
+    <string name="login_email_ipucu">E-posta adresiniz</string>
+    <string name="login_sifre_ipucu">Şifreniz</string>
+    <string name="login_sifremi_unuttum">Şifremi Unuttum</string>
+    <string name="login_giris_yap_buton">Giriş Yap</string>
+    <string name="login_veya">veya</string>
+    <string name="login_google_ile_giris">Google ile Giriş Yap</string>
+    <string name="login_hesap_yok_mu">Hesabın yok mu? </string>
+    <string name="login_kayit_ol"> Kayıt Ol</string>
+
+    <string name="register_baslik">Yeni Hesap Oluştur</string>
+    <string name="register_isim">İsim</string>
+    <string name="register_soyisim">Soyisim</string>
+    <string name="register_yas">Yaş</string>
+    <string name="register_email">E-posta adresi</string>
+    <string name="register_sifre">Şifre</string>
+    <string name="register_buton">Kayıt Ol</string>
+    <string name="register_geri_don">Zaten hesabın var mı? Giriş yap</string>
+
+    <string name="cikis_yap">Çıkış Yap</string>
+
+    <string name="task_mark_done">Tamamlandı Olarak İşaretle</string>
+    <string name="task_undo_done">Tamamlamayı Geri Al</string>
+    <string name="task_edit">Düzenle</string>
+    <string name="task_delete">Sil</string>
+    <string name="task_deleted">Görev silindi</string>
+    <string name="task_updated">Güncellendi</string>
+    <string name="task_edit_heading">Görevi Düzenle</string>
+    <string name="task_update_button">✓ Görevi Güncelle</string>
+    <string name="focus_custom_title">Özel Süre Belirle</string>
+    <string name="focus_custom_message">Kaç dakika odaklanmak istersiniz?</string>
+    <string name="focus_custom_hint">Dakika girin (Örn: 45)</string>
+    <string name="focus_custom_set">Ayarla</string>
+    <string name="action_cancel">İptal</string>
+    <string name="focus_custom_invalid">Lütfen 1 ile 600 arasında bir süre girin</string>
+    <string name="language_dialog_title">Uygulama Dili Seçin</string>
+    <string name="logout_success">Başarıyla çıkış yapıldı.</string>
+
+    <string name="foto_secildi">Fotoğraf başarıyla eklendi!</string>
+    <string name="foto_islenemedi">Fotoğraf işlenemedi!</string>
+    <string name="foto_kopyalanamadi">Fotoğraf kopyalanamadı!</string>
+    <string name="galeriden_sec">Galeriden Seç</string>
+    <string name="fotografi_kaldir">Fotoğrafı Kaldır</string>
+    <string name="profil_fotografi_baslik">Profil Fotoğrafı</string>
+    <string name="foto_kaldirildi">Fotoğraf kaldırıldı.</string>
+    <string name="ad_kullanici_zorunlu">Ad ve Kullanıcı Adı zorunludur!</string>
+    <string name="kaydediliyor">Kaydediliyor...</string>
+    <string name="oturum_bulunamadi">Oturum bulunamadı.</string>
+    <string name="kullanici_verisi_hata">Kullanıcı verisi oluşturulamadı.</string>
+    <string name="kullanici_adi_alinmis">Bu kullanıcı adı alınmış!</string>
+    <string name="profil_guncellendi">Profil başarıyla güncellendi!</string>
+    <string name="hata_tekrar_deneyin">Hata oluştu, tekrar deneyin.</string>
+    <string name="iptal">İptal</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="profili_duzenle_baslik">Profili Düzenle</string>
+    <string name="hint_ad">Ad</string>
+    <string name="hint_soyad">Soyad</string>
+    <string name="hint_kullanici_adi">Kullanıcı Adı (@ile)</string>
+    <string name="hint_meslek">Meslek / Unvan (İsteğe bağlı)</string>
+    <string name="hint_konum">Konum (İsteğe bağlı)</string>
+    <string name="hint_web">Web Sitesi (İsteğe bağlı)</string>
+    <string name="hint_biyografi">Biyografi / Hakkımda...</string>
+
+    <string name="sifre_sifirla">Şifre Sıfırlama E-postası Gönder</string>
+    <string name="sifre_sifirla_bilgi">Kayıtlı e-posta adresinize bir şifre sıfırlama bağlantısı göndereceğiz.</string>
+    <string name="sifre_mail_gonderildi">Şifre sıfırlama bağlantısı e-postanıza gönderildi.</string>
+    <string name="engellenenleri_yonet">Engellenenleri Yönet</string>
+    <string name="engellenen_yok">Şu anda engellenen kullanıcı bulunmuyor.</string>
+    <string name="hesabi_sil">Hesabımı Sil</string>
+    <string name="hesabi_sil_mesaj">Hesabınızı ve tüm verilerinizi kalıcı olarak silmek istediğinize emin misiniz? Bu işlem geri alınamaz.</string>
+    <string name="hesabiniz_silindi">Hesabınız başarıyla silindi.</string>
+    <string name="silme_hatasi">Hesap silinirken bir hata oluştu. Lütfen tekrar giriş yapıp deneyin.</string>
+
+    <string name="takip_edilen">Takip</string>
+    <string name="henuz_gonderi_yok">Henüz bir gönderi paylaşılmadı.</string>
+    <string name="begenilen_gonderi_yok">Henüz beğenilen bir gönderi yok.</string>
+
+    <string name="geri">Geri</string>
+    <string name="gizlilik_bilgi">Engellediğiniz hesaplar sizinle etkileşime giremez ve içerikleriniz onlara gösterilmez. Dilediğiniz zaman bir engeli buradan kaldırabilirsiniz.</string>
+    <string name="engellenen_hesaplar">ENGELLENEN HESAPLAR</string>
+    <string name="engellenen_bos_alt">Engellediğiniz hesaplar burada listelenir.</string>
+    <string name="engellenenler_yuklenemedi">Engellenenler yüklenemedi. Lütfen tekrar deneyin.</string>
+    <string name="engeli_kaldir_baslik">Engeli kaldır</string>
+    <string name="engeli_kaldir_onay">%1$s adlı kullanıcının engeli kaldırılsın mı?</string>
+    <string name="engeli_kaldir">Engeli Kaldır</string>
+    <string name="engel_kaldirildi">%1$s için engel kaldırıldı.</string>
+    <string name="gizlilik_politikasi">Gizlilik Politikası</string>
+    <string name="gizlilik_politikasi_url">https://gunluknottutucu-2fbc1.web.app/gizlilik.html</string>
+    <string name="tarayici_bulunamadi">Bağlantıyı açacak bir uygulama bulunamadı.</string>
+
+    <string name="login_bos_alan">Lütfen e-posta ve şifrenizi girin.</string>
+    <string name="login_basarisiz">E-posta veya şifre hatalı.</string>
+    <string name="auth_ag_hatasi">Bağlantı hatası. İnternetinizi kontrol edip tekrar deneyin.</string>
+    <string name="auth_cok_deneme">Çok fazla deneme yapıldı. Lütfen bir süre sonra tekrar deneyin.</string>
+    <string name="auth_genel_hata">Bir hata oluştu. Lütfen tekrar deneyin.</string>
+    <string name="login_sifirla_eposta_gerekli">Şifre sıfırlamak için e-posta adresinizi girin.</string>
+    <string name="google_iptal">Google girişi iptal edildi.</string>
+    <string name="google_kimlik_yok">Google kimlik bilgisi alınamadı.</string>
+    <string name="google_firebase_hata">Google ile giriş yapılamadı. Lütfen tekrar deneyin.</string>
+    <string name="google_yapilandirma_hatasi">Google girişi yapılandırılmamış. Firebase\'e bu uygulamanın SHA-1 parmak izini ekleyin.</string>
+    <string name="register_tum_alanlar">Lütfen tüm alanları doldurun.</string>
+    <string name="register_yas_siniri">Uygulamaya kayıt olmak için 18 yaşından büyük olmalısınız.</string>
+    <string name="register_gecersiz_eposta">Lütfen geçerli bir e-posta adresi girin.</string>
+    <string name="register_sifre_zayif">Şifre en az 8 karakter olmalı; büyük harf, küçük harf, rakam ve sembol içermelidir!</string>
+    <string name="register_sozlesme_zorunlu">Kayıt olmak için sözleşmeyi kabul etmelisiniz.</string>
+    <string name="register_kullanici_adi_kontrol">Kullanıcı adı kontrol ediliyor...</string>
+    <string name="register_kayit_yapiliyor">Kayıt yapılıyor...</string>
+    <string name="register_basarili">Kayıt başarılı! Giriş sayfasına yönlendiriliyorsunuz.</string>
+    <string name="register_eposta_kayitli">Bu e-posta adresiyle zaten bir hesap var.</string>
+    <string name="register_hata">Kayıt tamamlanamadı. Lütfen tekrar deneyin.</string>
+    <string name="register_kullanici_adi_hint">Kullanıcı Adı</string>
+    <string name="register_dogum_tarihi_hint">Doğum Tarihi</string>
+    <string name="register_sozlesme">Kullanıcı Sözleşmesi ve Gizlilik Politikası\'nı okudum, kabul ediyorum.</string>
+    <string name="profil_paylas_konu">FlowNote Profilim</string>
+    <string name="profil_paylas_metin">FlowNote\'da paylaşımlarımı ve ilerlememi takip et!\n\nProfilime göz at: %1$s</string>
+    <string name="profil_paylas_baslik">Profilini Şurada Paylaş:</string>
+    <string name="gd_yeni_gorev">Yeni Görev Oluştur</string>
+    <string name="gd_alt_baslik">Ajandanıza yeni bir plan veya hatırlatıcı ekleyin</string>
+    <string name="gd_gorev_basligi">GÖREV BAŞLIĞI</string>
+    <string name="gd_baslik_ipucu">Örn: Müşteriler ile Öğle Yemeği</string>
+    <string name="gd_detaylar">DETAYLAR &amp; NOTLAR</string>
+    <string name="gd_detay_ipucu">Görevle ilgili toplantı odası, belgeler veya kısa notlar...</string>
+    <string name="gd_kategori">KATEGORİ</string>
+    <string name="gd_kat_is">🔵 İş</string>
+    <string name="gd_kat_kisisel">🟢 Kişisel</string>
+    <string name="gd_kat_saglik">🟡 Sağlık</string>
+    <string name="gd_tekrar">TEKRAR DURUMU</string>
+    <string name="gd_zaman">ZAMAN PLANI</string>
+    <string name="gd_tarih_sec">📅 TARİH SEÇ</string>
+    <string name="gd_saat_sec">🕒 SAAT SEÇ</string>
+    <string name="gd_kaydet">✓ Görevi Kaydet</string>
+    <string name="gd_vazgec">Vazgeç</string>
+
+    <string name="bilinmeyen_kullanici">Bilinmeyen Kullanıcı</string>
+    <string name="yeni">Yeni</string>
+    <string name="akis_bos">Akışta henüz gönderi yok.</string>
+    <string name="ilk_gonderiyi_paylas">İlk gönderiyi paylaş</string>
+    <string name="profili_gor">Profili Gör</string>
+    <string name="mesaj_gonder">Mesaj Gönder</string>
+    <string name="metni_kopyala">Metni Kopyala</string>
+    <string name="metin_kopyalandi">Metin panoya kopyalandı.</string>
+    <string name="gonderi_paylas_metin">%1$s FlowNote\'da paylaştı:\n\n%2$s</string>
+    <string name="gonderiyi_sil">Gönderiyi Sil</string>
+    <string name="gonderiyi_sil_onay">Bu gönderi beğeni ve yorumlarıyla birlikte kalıcı olarak silinecek. Emin misiniz?</string>
+    <string name="gonderi_silindi">Gönderi silindi.</string>
+    <string name="kullaniciyi_engelle">Kullanıcıyı Engelle</string>
+    <string name="engelle">Engelle</string>
+    <string name="engelle_onay">%1$s engellensin mi? Birbirinizin gönderilerini göremez ve mesajlaşamazsınız.</string>
+    <string name="kullanici_engellendi">%1$s engellendi.</string>
+    <string name="yorumlar">Yorumlar</string>
+    <string name="yorumlar_sayili">Yorumlar (%1$d)</string>
+    <string name="yorum_yok">Henüz yorum yok. İlk yorumu sen yaz!</string>
+    <string name="yorum_yaz_ipucu">Yorum yaz…</string>
+    <string name="gonder">Gönder</string>
+    <string name="yorumu_sil">Yorumu Sil</string>
+    <string name="yorumu_sil_onay">Bu yorum silinsin mi?</string>
+
+    <string name="gonderi_bos">Lütfen bir şeyler yazın veya fotoğraf seçin.</string>
+    <string name="gonderi_paylasildi">Gönderi paylaşıldı.</string>
+    <string name="google_yas_baslik">Yaş onayı</string>
+    <string name="google_yas_mesaj">Google ile devam etmek için 18 yaşından büyük olmalısınız.</string>
+    <string name="google_yas_onay">18 yaşından büyüğüm</string>
+    <string name="yorumu_sikayet_et">Yorumu Şikayet Et</string>
+    <string name="gonderiyi_sikayet_et">Gönderiyi Şikayet Et</string>
+    <string name="sikayet_baslik">Bu gönderiyi neden şikayet ediyorsun?</string>
+    <string name="sikayet_et">Şikayet Et</string>
+    <string name="sikayet_alindi">Şikayetin alındı. İncelendikten sonra uygun görülmezse gönderi kaldırılacak.</string>
+    <string name="sikayet_gonderilemedi">Şikayet gönderilemedi. İnternet bağlantını kontrol edip tekrar dene.</string>
+    <string-array name="sikayet_sebepleri">
+        <item>Spam veya yanıltıcı</item>
+        <item>Taciz veya zorbalık</item>
+        <item>Nefret söylemi</item>
+        <item>Şiddet veya tehlikeli içerik</item>
+        <item>Çıplaklık veya cinsel içerik</item>
+        <item>Yanlış bilgi</item>
+        <item>Diğer</item>
+    </string-array>
+
+    <string name="kullanici_bulunamadi">Kullanıcı bulunamadı.</string>
+    <string name="alinan_begeni">Beğeni</string>
+    <string name="gonderiler_baslik">GÖNDERİLER</string>
+    <string name="profil_engelledin">Bu kullanıcıyı engelledin. Gönderilerini görmek için engeli kaldır.</string>
+    <string name="profil_goruntulenemiyor">Bu profilin gönderileri görüntülenemiyor.</string>
+
+    <string name="arama_ipucu">Kişi veya gönderi ara</string>
+    <string name="mesaj_kisi_ara_ipucu">Mesaj göndermek için kişi ara</string>
+    <string name="temizle">Temizle</string>
+    <string name="kisiler">Kişiler</string>
+    <string name="arama_baslangic">Aramak istediğin kişiyi ya da kelimeyi yaz.</string>
+    <string name="arama_sonuc_yok">Sonuç bulunamadı.</string>
+
+    <string name="mesajlar">Mesajlar</string>
+    <string name="yeni_mesaj">Yeni Mesaj</string>
+    <string name="mesaj_yok">Henüz mesajın yok</string>
+    <string name="mesaj_yok_alt">Bir kişiyi arayarak ya da profilinden sohbet başlatabilirsin.</string>
+    <string name="sen_onek">Sen: %1$s</string>
+    <string name="sohbet_bos">Henüz mesaj yok. İlk mesajı gönder!</string>
+    <string name="mesaj_yaz_ipucu">Mesaj yaz…</string>
+    <string name="sohbet_engelledin">Bu kullanıcıyı engelledin. Mesaj göndermek için profilinden engeli kaldırabilirsin.</string>
+    <string name="sohbet_engellendin">Bu kullanıcıya mesaj gönderemezsin.</string>
+
+    <string name="icerik_red_nefret">Bu metin ırkçılık veya nefret söylemi içeriyor. Lütfen değiştirip tekrar dene.</string>
+    <string name="icerik_red_siddet">Bu metin şiddet veya tehdit içeriyor. Lütfen değiştirip tekrar dene.</string>
+    <string name="icerik_red_cinsel">Bu metin cinsel veya uygunsuz içerik barındırıyor. Lütfen değiştirip tekrar dene.</string>
+    <string name="icerik_red_foto">Bu fotoğraf çıplaklık veya cinsel içerik barındırdığı için paylaşılamaz.</string>
+    <string name="foto_kontrol_ediliyor">Kontrol…</string>
+    <string name="foto_kontrol_edilemedi">Fotoğraf kontrol edilemedi. Başka bir görsel dene.</string>
+
+    <string name="gorev_hatirlat">Görev saatinde hatırlat</string>
+    <string name="gorev_zamani">Görev zamanı geldi</string>
+    <string name="hatirlatma_gecmis">Bu saat geçtiği için hatırlatma kurulmadı</string>
+    <string name="bildirim_gorev_kanal">Görev hatırlatmaları</string>
+    <string name="bildirim_gorev_kanal_aciklama">Görev saati gelince bildirim</string>
+    <string name="bildirim_sosyal_kanal">Sosyal bildirimler</string>
+    <string name="bildirim_sosyal_kanal_aciklama">Takip, beğeni, yorum ve mesaj bildirimleri</string>
+    <string name="bildirimler">Bildirimler</string>
+    <string name="bildirim_yok">Henüz bildirimin yok</string>
+    <string name="bildirim_yok_alt">Takip, beğeni, yorum ve mesajlar burada görünür.</string>
+    <string name="bildirim_takip">%1$s seni takip etmeye başladı</string>
+    <string name="bildirim_begeni">%1$s gönderini beğendi</string>
+    <string name="bildirim_yorum">%1$s gönderine yorum yaptı</string>
+    <string name="bildirim_mesaj">%1$s sana mesaj gönderdi</string>
+    <string name="takip_et">Takip Et</string>
+    <string name="takiptesin">Takiptesin</string>
+    <string name="takip_edildi">Takip etmeye başladın</string>
+    <string name="takip_birakildi">Takipten çıktın</string>
+    <string name="tum_gorevler">Tüm görevler</string>
+    <string name="gune_don">Güne dön</string>
+    <string name="bildirimleri_ac">Bildirimler</string>
+</resources>

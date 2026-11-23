@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:paddingStart="12dp"
+    android:paddingEnd="64dp"
+    android:paddingVertical="3dp">
+
+    <TextView
+        android:id="@+id/textMesajMetni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_mesaj_gelen"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="9dp"
+        android:textColor="@color/renk_metin_baslik"
+        android:textIsSelectable="true"
+        android:textSize="15sp"
+        tools:text="İyiyim, sen?" />
+
+    <TextView
+        android:id="@+id/textMesajSaat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/renk_metin_ikincil"
+        android:textSize="11sp"
+        tools:text="14:33" />
+</LinearLayout>

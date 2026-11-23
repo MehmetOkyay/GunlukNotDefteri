@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/renk_arkaplan"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:text="@string/register_baslik"
+            android:textColor="@color/renk_metin_baslik"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editKayitIsim"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_isim"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/renk_metin_baslik"
+            android:textColorHint="@color/renk_metin_ipucu" />
+
+        <EditText
+            android:id="@+id/editKayitSoyisim"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_soyisim"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/renk_metin_baslik"
+            android:textColorHint="@color/renk_metin_ipucu" />
+
+        <EditText
+            android:id="@+id/editKayitKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_kullanici_adi_hint"
+            android:inputType="textNoSuggestions"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/renk_metin_baslik"
+            android:textColorHint="@color/renk_metin_ipucu" />
+
+        <EditText
+            android:id="@+id/editKayitDogumTarihi"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_dogum_tarihi_hint"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/renk_metin_baslik"
+            android:textColorHint="@color/renk_metin_ipucu" />
+
+        <EditText
+            android:id="@+id/editKayitEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/renk_metin_baslik"
+            android:textColorHint="@color/renk_metin_ipucu" />
+
+        <EditText
+            android:id="@+id/editKayitSifre"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_sifre"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/renk_metin_baslik"
+            android:textColorHint="@color/renk_metin_ipucu" />
+
+        <CheckBox
+            android:id="@+id/checkSozlesme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:buttonTint="@color/renk_vurgu"
+            android:text="@string/register_sozlesme"
+            android:textColor="@color/renk_metin_ikincil"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnKayitOl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/renk_vurgu"
+            android:text="@string/register_buton"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textGeriDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/register_geri_don"
+        android:textColor="@color/renk_vurgu"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

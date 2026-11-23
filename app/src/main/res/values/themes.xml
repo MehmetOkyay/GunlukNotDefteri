@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.GunlukNotDefteri" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/renk_arkaplan</item>
+    </style>
+
+    <style name="Theme.GunlukNotDefteri" parent="Base.Theme.GunlukNotDefteri" />
+
+    <style name="ShapeAppearance.GunlukNotDefteri.TakvimKart" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
+    </style>
+
+    <style name="AvatarYuvarlak">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

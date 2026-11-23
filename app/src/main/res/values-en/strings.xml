@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlowNote</string>
+    <string name="hello_blank_fragment">Feed</string>
+    <string name="nav_akis">Feed</string>
+    <string name="nav_gorevler">Tasks</string>
+    <string name="nav_odak">Focus</string>
+    <string name="nav_profil">Profile</string>
+
+    <string name="calendar_notifications">Notifications</string>
+    <string name="calendar_search">Search</string>
+    <string name="calendar_previous_month">Previous month</string>
+    <string name="calendar_next_month">Next month</string>
+    <string name="today">Today</string>
+    <string name="see_all">See all ›</string>
+    <string name="activity_count">%1$d Activities</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="daily_reminders">Daily Reminders</string>
+    <string name="dark_mode">Dark Theme</string>
+    <string name="language">Language</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_german">Deutsch</string>
+    <string name="rate_app">Rate App</string>
+    <string name="version">Version 1.0.0</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="settings">Settings</string>
+
+    <string name="focus_title">Focus</string>
+    <string name="focus_mode">Focus Mode</string>
+    <string name="break_mode">Break Mode</string>
+    <string name="focus_25">Focus (25 min)</string>
+    <string name="break_5">Break (5 min)</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+
+    <string name="task_title_hint">Task Title</string>
+    <string name="task_details_hint">Details...</string>
+    <string name="repeat_status">Repeat:</string>
+    <string name="repeat_none">None</string>
+    <string name="repeat_daily">Daily</string>
+    <string name="repeat_weekly">Weekly</string>
+    <string name="repeat_monthly">Monthly</string>
+    <string name="repeat_yearly">Yearly</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="save_task">Save Task</string>
+    <string name="task_title_required">Task title cannot be empty</string>
+    <string name="task_title_too_long">Task title can be up to 80 characters</string>
+    <string name="task_saved">Task saved</string>
+    <string name="task_save_failed">Failed to save task, try again</string>
+
+    <string name="material_calendar_monday">M</string>
+    <string name="material_calendar_tuesday">T</string>
+    <string name="material_calendar_wednesday">W</string>
+    <string name="material_calendar_thursday">T</string>
+    <string name="material_calendar_friday">F</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">S</string>
+    <array name="material_calendar_months_array">
+        <item>JANUARY</item><item>FEBRUARY</item><item>MARCH</item><item>APRIL</item>
+        <item>MAY</item><item>JUNE</item><item>JULY</item><item>AUGUST</item>
+        <item>SEPTEMBER</item><item>OCTOBER</item><item>NOVEMBER</item><item>DECEMBER</item>
+    </array>
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+
+    <string name="ayarlar_baslik">Settings &amp; Preferences</string>
+    <string name="yonet">Manage</string>
+    <string name="gorunum_ve_tema">APPEARANCE &amp; THEME</string>
+    <string name="aydinlik">Light</string>
+    <string name="karanlik">Dark</string>
+    <string name="sistem">System</string>
+    <string name="dil_ve_bolge">LANGUAGE &amp; REGION</string>
+    <string name="uygulama_dili">App Language</string>
+    <string name="hesap_ve_guvenlik">ACCOUNT &amp; SECURITY</string>
+    <string name="hesap_bilgileri">Account Info</string>
+    <string name="hesap_bilgileri_alt">Profile name, bio and email</string>
+    <string name="sifre_2fa">Password Settings</string>
+    <string name="sifre_2fa_alt">Reset your password securely via email</string>
+    <string name="gizlilik">Privacy &amp; Blocked Users</string>
+
+    <string name="gonderiler">Posts</string>
+    <string name="aktiviteler">Activities</string>
+    <string name="paylasim">Posts</string>
+    <string name="takipci">Followers</string>
+    <string name="profili_duzenle">Edit Profile</string>
+    <string name="paylas">Share</string>
+    <string name="pomodoro_odak_baslik">POMODORO FOCUS</string>
+    <string name="odak_btn">Focus (25)</string>
+    <string name="kisa_btn">Short (5)</string>
+    <string name="uzun_btn">Long (15)</string>
+    <string name="btn_sifirla">🔄 Reset</string>
+    <string name="btn_baslat">▶ Start</string>
+    <string name="btn_duraklat">⏸ Pause</string>
+    <string name="btn_atla">⏩ Skip</string>
+    <string name="btn_ozel_sure">Custom Time</string>
+    <string name="btn_kronometre">Stopwatch</string>
+    <string name="odaklanma_seansi">FOCUS SESSION</string>
+    <string name="kisa_mola">SHORT BREAK</string>
+    <string name="uzun_mola">LONG BREAK</string>
+    <string name="ozel_seans">CUSTOM SESSION</string>
+    <string name="kronometre_suresiz">STOPWATCH (ENDLESS)</string>
+    <string name="odak_bitti">Focus session finished</string>
+    <string name="odak_bitti_metin">Time is up. You can continue from the Focus tab.</string>
+    <string name="begenilenler">Liked</string>
+
+    <string name="login_hosgeldin">Welcome Back</string>
+    <string name="login_alt_baslik">Log in to access your notes</string>
+    <string name="login_email_ipucu">Email address</string>
+    <string name="login_sifre_ipucu">Password</string>
+    <string name="login_sifremi_unuttum">Forgot Password?</string>
+    <string name="login_giris_yap_buton">Log In</string>
+    <string name="login_veya">or</string>
+    <string name="login_google_ile_giris">Sign in with Google</string>
+    <string name="login_hesap_yok_mu">Don\'t have an account? </string>
+    <string name="login_kayit_ol">Sign Up</string>
+
+    <string name="register_baslik">Create New Account</string>
+    <string name="register_isim">First Name</string>
+    <string name="register_soyisim">Last Name</string>
+    <string name="register_yas">Age</string>
+    <string name="register_email">Email address</string>
+    <string name="register_sifre">Password</string>
+    <string name="register_buton">Sign Up</string>
+    <string name="register_geri_don">Already have an account? Log in</string>
+
+    <string name="cikis_yap">Log Out</string>
+
+    <string name="task_mark_done">Mark as completed</string>
+    <string name="task_undo_done">Undo completion</string>
+    <string name="task_edit">Edit</string>
+    <string name="task_delete">Delete</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="task_updated">Updated</string>
+    <string name="task_edit_heading">Edit Task</string>
+    <string name="task_update_button">✓ Update Task</string>
+    <string name="focus_custom_title">Set Custom Time</string>
+    <string name="focus_custom_message">How many minutes do you want to focus?</string>
+    <string name="focus_custom_hint">Enter minutes (e.g. 45)</string>
+    <string name="focus_custom_set">Set</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="focus_custom_invalid">Please enter a value between 1 and 600</string>
+    <string name="language_dialog_title">Select App Language</string>
+    <string name="logout_success">Signed out successfully.</string>
+
+        <string name="foto_secildi">Photo added successfully!</string>
+        <string name="foto_islenemedi">Failed to process photo!</string>
+        <string name="foto_kopyalanamadi">Failed to copy photo!</string>
+        <string name="galeriden_sec">Choose from Gallery</string>
+        <string name="fotografi_kaldir">Remove Photo</string>
+        <string name="profil_fotografi_baslik">Profile Photo</string>
+        <string name="foto_kaldirildi">Photo removed.</string>
+        <string name="ad_kullanici_zorunlu">Name and Username are required!</string>
+        <string name="kaydediliyor">Saving...</string>
+        <string name="oturum_bulunamadi">Session not found.</string>
+        <string name="kullanici_verisi_hata">Failed to create user data.</string>
+        <string name="kullanici_adi_alinmis">This username is already taken!</string>
+        <string name="profil_guncellendi">Profile updated successfully!</string>
+        <string name="hata_tekrar_deneyin">An error occurred, please try again.</string>
+    <string name="iptal">Cancel</string>
+    <string name="kaydet">Save</string>
+    <string name="profili_duzenle_baslik">Edit Profile</string>
+    <string name="hint_ad">First Name</string>
+    <string name="hint_soyad">Last Name</string>
+    <string name="hint_kullanici_adi">Username (with @)</string>
+    <string name="hint_meslek">Profession / Title (Optional)</string>
+    <string name="hint_konum">Location (Optional)</string>
+    <string name="hint_web">Website (Optional)</string>
+    <string name="hint_biyografi">Biography / About me...</string>
+
+    <string name="sifre_sifirla">Send Password Reset Email</string>
+    <string name="sifre_sifirla_bilgi">We will send a password reset link to your registered email address.</string>
+    <string name="sifre_mail_gonderildi">Password reset link has been sent to your email.</string>
+    <string name="engellenenleri_yonet">Manage Blocked Users</string>
+    <string name="engellenen_yok">There are no blocked users at the moment.</string>
+    <string name="hesabi_sil">Delete Account</string>
+    <string name="hesabi_sil_mesaj">Are you sure you want to permanently delete your account and all your data? This action cannot be undone.</string>
+    <string name="hesabiniz_silindi">Your account has been successfully deleted.</string>
+    <string name="silme_hatasi">An error occurred while deleting the account. Please log in again and retry.</string>
+
+    <string name="takip_edilen">Following</string>
+    <string name="henuz_gonderi_yok">No posts shared yet.</string>
+    <string name="begenilen_gonderi_yok">No liked posts yet.</string>
+
+    <string name="geri">Back</string>
+    <string name="gizlilik_bilgi">Accounts you block cannot interact with you and your content is hidden from them. You can remove a block here at any time.</string>
+    <string name="engellenen_hesaplar">BLOCKED ACCOUNTS</string>
+    <string name="engellenen_bos_alt">Accounts you block will appear here.</string>
+    <string name="engellenenler_yuklenemedi">Could not load blocked users. Please try again.</string>
+    <string name="engeli_kaldir_baslik">Unblock</string>
+    <string name="engeli_kaldir_onay">Do you want to unblock %1$s?</string>
+    <string name="engeli_kaldir">Unblock</string>
+    <string name="engel_kaldirildi">%1$s has been unblocked.</string>
+    <string name="gizlilik_politikasi">Privacy Policy</string>
+    <string name="gizlilik_politikasi_url">https://gunluknottutucu-2fbc1.web.app/gizlilik.html</string>
+    <string name="tarayici_bulunamadi">No app found to open the link.</string>
+
+    <string name="login_bos_alan">Please enter your email and password.</string>
+    <string name="login_basarisiz">Incorrect email or password.</string>
+    <string name="auth_ag_hatasi">Network error. Check your connection and try again.</string>
+    <string name="auth_cok_deneme">Too many attempts. Please try again later.</string>
+    <string name="auth_genel_hata">Something went wrong. Please try again.</string>
+    <string name="login_sifirla_eposta_gerekli">Enter your email address to reset your password.</string>
+    <string name="google_iptal">Google sign-in was cancelled.</string>
+    <string name="google_kimlik_yok">Could not get Google credentials.</string>
+    <string name="google_firebase_hata">Could not sign in with Google. Please try again.</string>
+    <string name="google_yapilandirma_hatasi">Google sign-in is not configured. Add this app\'s SHA-1 fingerprint in Firebase.</string>
+    <string name="register_tum_alanlar">Please fill in all fields.</string>
+    <string name="register_yas_siniri">You must be at least 18 years old to sign up.</string>
+    <string name="register_gecersiz_eposta">Please enter a valid email address.</string>
+    <string name="register_sifre_zayif">Password must be at least 8 characters and include upper and lower case letters, a number and a symbol!</string>
+    <string name="register_sozlesme_zorunlu">You must accept the agreement to sign up.</string>
+    <string name="register_kullanici_adi_kontrol">Checking username...</string>
+    <string name="register_kayit_yapiliyor">Signing up...</string>
+    <string name="register_basarili">Sign-up successful! Redirecting to the login page.</string>
+    <string name="register_eposta_kayitli">An account with this email already exists.</string>
+    <string name="register_hata">Sign-up could not be completed. Please try again.</string>
+    <string name="register_kullanici_adi_hint">Username</string>
+    <string name="register_dogum_tarihi_hint">Date of Birth</string>
+    <string name="register_sozlesme">I have read and accept the User Agreement and Privacy Policy.</string>
+    <string name="profil_paylas_konu">My FlowNote Profile</string>
+    <string name="profil_paylas_metin">Follow my posts and progress on FlowNote!\n\nCheck out my profile: %1$s</string>
+    <string name="profil_paylas_baslik">Share your profile via:</string>
+    <string name="gd_yeni_gorev">Create New Task</string>
+    <string name="gd_alt_baslik">Add a new plan or reminder to your agenda</string>
+    <string name="gd_gorev_basligi">TASK TITLE</string>
+    <string name="gd_baslik_ipucu">E.g. Lunch with customers</string>
+    <string name="gd_detaylar">DETAILS &amp; NOTES</string>
+    <string name="gd_detay_ipucu">Meeting room, documents or short notes about the task...</string>
+    <string name="gd_kategori">CATEGORY</string>
+    <string name="gd_kat_is">🔵 Work</string>
+    <string name="gd_kat_kisisel">🟢 Personal</string>
+    <string name="gd_kat_saglik">🟡 Health</string>
+    <string name="gd_tekrar">REPEAT</string>
+    <string name="gd_zaman">SCHEDULE</string>
+    <string name="gd_tarih_sec">📅 PICK DATE</string>
+    <string name="gd_saat_sec">🕒 PICK TIME</string>
+    <string name="gd_kaydet">✓ Save Task</string>
+    <string name="gd_vazgec">Cancel</string>
+
+    <string name="bilinmeyen_kullanici">Unknown User</string>
+    <string name="yeni">New</string>
+    <string name="akis_bos">No posts in the feed yet.</string>
+    <string name="ilk_gonderiyi_paylas">Share the first post</string>
+    <string name="profili_gor">View Profile</string>
+    <string name="mesaj_gonder">Send Message</string>
+    <string name="metni_kopyala">Copy Text</string>
+    <string name="metin_kopyalandi">Text copied to clipboard.</string>
+    <string name="gonderi_paylas_metin">%1$s shared on FlowNote:\n\n%2$s</string>
+    <string name="gonderiyi_sil">Delete Post</string>
+    <string name="gonderiyi_sil_onay">This post will be permanently deleted along with its likes and comments. Are you sure?</string>
+    <string name="gonderi_silindi">Post deleted.</string>
+    <string name="kullaniciyi_engelle">Block User</string>
+    <string name="engelle">Block</string>
+    <string name="engelle_onay">Block %1$s? You won\'t see each other\'s posts or be able to message each other.</string>
+    <string name="kullanici_engellendi">%1$s has been blocked.</string>
+    <string name="yorumlar">Comments</string>
+    <string name="yorumlar_sayili">Comments (%1$d)</string>
+    <string name="yorum_yok">No comments yet. Be the first to comment!</string>
+    <string name="yorum_yaz_ipucu">Write a comment…</string>
+    <string name="gonder">Send</string>
+    <string name="yorumu_sil">Delete Comment</string>
+    <string name="yorumu_sil_onay">Delete this comment?</string>
+
+    <string name="gonderi_bos">Write something or choose a photo.</string>
+    <string name="gonderi_paylasildi">Post shared.</string>
+    <string name="google_yas_baslik">Age confirmation</string>
+    <string name="google_yas_mesaj">You must be at least 18 years old to continue with Google.</string>
+    <string name="google_yas_onay">I am 18 or older</string>
+    <string name="yorumu_sikayet_et">Report Comment</string>
+    <string name="gonderiyi_sikayet_et">Report Post</string>
+    <string name="sikayet_baslik">Why are you reporting this post?</string>
+    <string name="sikayet_et">Report</string>
+    <string name="sikayet_alindi">Your report has been received. The post will be removed if it violates our rules.</string>
+    <string name="sikayet_gonderilemedi">Could not send the report. Check your connection and try again.</string>
+    <string-array name="sikayet_sebepleri">
+        <item>Spam or misleading</item>
+        <item>Harassment or bullying</item>
+        <item>Hate speech</item>
+        <item>Violence or dangerous content</item>
+        <item>Nudity or sexual content</item>
+        <item>False information</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="kullanici_bulunamadi">User not found.</string>
+    <string name="alinan_begeni">Likes</string>
+    <string name="gonderiler_baslik">POSTS</string>
+    <string name="profil_engelledin">You blocked this user. Unblock them to see their posts.</string>
+    <string name="profil_goruntulenemiyor">This profile\'s posts can\'t be shown.</string>
+
+    <string name="arama_ipucu">Search people or posts</string>
+    <string name="mesaj_kisi_ara_ipucu">Search for someone to message</string>
+    <string name="temizle">Clear</string>
+    <string name="kisiler">People</string>
+    <string name="arama_baslangic">Type a name or a word to search.</string>
+    <string name="arama_sonuc_yok">No results found.</string>
+
+    <string name="mesajlar">Messages</string>
+    <string name="yeni_mesaj">New Message</string>
+    <string name="mesaj_yok">No messages yet</string>
+    <string name="mesaj_yok_alt">Start a chat by searching for someone or from their profile.</string>
+    <string name="sen_onek">You: %1$s</string>
+    <string name="sohbet_bos">No messages yet. Send the first one!</string>
+    <string name="mesaj_yaz_ipucu">Write a message…</string>
+    <string name="sohbet_engelledin">You blocked this user. Unblock them from their profile to send messages.</string>
+    <string name="sohbet_engellendin">You can\'t send messages to this user.</string>
+
+    <string name="icerik_red_nefret">This text includes racism or hate speech. Please edit it and try again.</string>
+    <string name="icerik_red_siddet">This text includes violence or a threat. Please edit it and try again.</string>
+    <string name="icerik_red_cinsel">This text includes sexual or inappropriate content. Please edit it and try again.</string>
+    <string name="icerik_red_foto">This photo can\'t be shared because it contains nudity or sexual content.</string>
+    <string name="foto_kontrol_ediliyor">Checking…</string>
+    <string name="foto_kontrol_edilemedi">Could not check the photo. Try another image.</string>
+
+    <string name="gorev_hatirlat">Remind me at the task time</string>
+    <string name="gorev_zamani">It\'s time for your task</string>
+    <string name="hatirlatma_gecmis">No reminder was set because this time has passed</string>
+    <string name="bildirim_gorev_kanal">Task reminders</string>
+    <string name="bildirim_gorev_kanal_aciklama">A notification when a task is due</string>
+    <string name="bildirim_sosyal_kanal">Social notifications</string>
+    <string name="bildirim_sosyal_kanal_aciklama">Follows, likes, comments and messages</string>
+    <string name="bildirimler">Notifications</string>
+    <string name="bildirim_yok">No notifications yet</string>
+    <string name="bildirim_yok_alt">Follows, likes, comments and messages show up here.</string>
+    <string name="bildirim_takip">%1$s started following you</string>
+    <string name="bildirim_begeni">%1$s liked your post</string>
+    <string name="bildirim_yorum">%1$s commented on your post</string>
+    <string name="bildirim_mesaj">%1$s sent you a message</string>
+    <string name="takip_et">Follow</string>
+    <string name="takiptesin">Following</string>
+    <string name="takip_edildi">You are now following</string>
+    <string name="takip_birakildi">Unfollowed</string>
+    <string name="tum_gorevler">All tasks</string>
+    <string name="gune_don">Back to day</string>
+    <string name="bildirimleri_ac">Notifications</string>
+</resources>

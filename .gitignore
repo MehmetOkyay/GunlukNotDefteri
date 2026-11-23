@@ -1,0 +1,17 @@
+keystore.properties
+*.jks
+*.keystore
+local.properties
+
+.gradle/
+build/
+**/build/
+
+.idea/
+*.iml
+
+functions/node_modules/
+
+app/google-services.json
+app/release/
+.firebase/

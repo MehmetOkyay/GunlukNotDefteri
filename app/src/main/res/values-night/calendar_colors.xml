@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="takvim_gun_metin">#F7F9FFFF</color>
+    <color name="takvim_diger_ay_metin">#729DD7FF</color>
+    <color name="takvim_devre_disi_metin">#55FFFFFF</color>
+    <color name="takvim_secili_metin">#2F448F</color>
+</resources>

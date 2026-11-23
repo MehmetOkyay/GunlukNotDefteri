@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4D8CFF</color>
+    <color name="colorPrimaryDark">#1E3A8A</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="bg_main">#121212</color>
+    <color name="card_bg">#1E1E1E</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#AAAAAA</color>
+    <color name="text_title">#60A5FA</color>
+
+    <color name="renk_arkaplan">#121212</color>
+    <color name="renk_kart">#1E1E1E</color>
+    <color name="renk_vurgu">#4D8CFF</color>
+    <color name="renk_vurgu_koyu">#1E3A8A</color>
+    <color name="renk_metin_baslik">#FFFFFF</color>
+    <color name="renk_metin_ikincil">#AAAAAA</color>
+    <color name="renk_metin_ipucu">#666666</color>
+    <color name="renk_ayirac">#333333</color>
+
+    <color name="renk_vurgu_transparan">#334D8CFF</color>
+    <color name="renk_basari">#26C6A8</color>
+    <color name="renk_mor">#C58AF0</color>
+
+    <color name="renk_hata">#F44336</color>
+</resources>
